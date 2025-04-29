@@ -10,3 +10,10 @@ func TestSoma(t *testing.T) {
 	}
 }
 
+func TestSoma2(t *testing.T) {
+
+	total := Soma(16, 15)
+	if total != 30 {
+		t.Errorf("Resultado da soma é inválido: Resultado %d. Esperado: %d", total, 30)
+	}
+}
